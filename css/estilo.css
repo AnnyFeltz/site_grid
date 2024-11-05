@@ -132,15 +132,18 @@ body {
 }
 
 #contato label {
+    margin: 5px;
     grid-column: 1;
     align-self: center;
 }
 
 #contato input {
+    margin: 5px;
     grid-column: 1;
 }
 
 #contato textarea {
+    margin: 5px;
     grid-column: 1;
 }
 
