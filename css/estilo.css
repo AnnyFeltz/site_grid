@@ -19,10 +19,11 @@ body {
 }
 
 #cabecalho {
-    display: flex;
+    display: grid;
+    grid-template-columns: 100%;
     background-color: rgb(184, 203, 224);
-    align-items: center;
-    justify-content: center;
+    align-content: center;
+    justify-items: center;
     padding: 30px;
     width: 100%;
     height: 110px;
@@ -43,10 +44,11 @@ body {
 
 #menu {
     font-family: "Dream";
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     background-color: rgb(202, 219, 240);
-    align-items: center;
-    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
     width: auto;
     height: 80px;
     list-style: none;
@@ -59,21 +61,26 @@ body {
 }
 
 #conteudo {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-image: url("img/fundo.jpeg");
     background-size: 150px 150px;
     background-repeat: repeat;
     height: 450px;
     font-family: "Dream";
     align-items: center;
-    justify-content: space-around;
+    align-content: center;
+    justify-items: center;
     color: rgb(59, 112, 156);
+    padding: 50px;
 }
 
 #conteudo img {
     border-radius: 20%;
     border: 5px rgb(202, 219, 240) solid;
     box-shadow: rgba(24, 40, 83, 0.219) 10px 10px 10px 1px;
+    width: 400px;
+    height: auto;
 }
 
 #celula {
@@ -82,17 +89,18 @@ body {
 
 #galeria {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
-    padding: 30px;
     background-image: url("img/fundo.jpeg");
     background-size: 150px 150px;
     background-repeat: repeat;
+    width: 100%;
     height: fit-content;
     font-family: "Dream";
+    align-content: center;
     align-items: center;
-    justify-content: space-around;
     justify-items: center;
+    padding: 30px;
 }
 
 #galeria img {
@@ -101,13 +109,20 @@ body {
     box-shadow: rgba(24, 40, 83, 0.219) 5px 5px 10px 1px;
 }
 
+#foto {
+    width: 350px;
+    height: auto;
+}
+
 #contato {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 30px 30px 30px 30px 30px 150px;
+    row-gap: 10px;
     background-image: url("img/fundo.jpeg");
     background-size: 150px 150px;
     background-repeat: repeat;
+    width: 100%;
     height: 450px;
     font-family: "Dream";
     color: rgb(59, 112, 156);
@@ -131,6 +146,11 @@ body {
     grid-column: 2;
     grid-row: 1 / 6;
     justify-self: center;
+}
+
+#enviar {
+    width: 100px;
+    height: 30px;
 }
 
 #rodape {
